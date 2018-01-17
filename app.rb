@@ -9,12 +9,21 @@ end
 post '/team' do
 @team = params[:team]
 @coach = params[:coach]
-@pguard = params[:pguard]
-@sguard = params[:sguard]
-@pforward = params[:pforward]
-@sguard = params[:sguard]
-@center = params[:center]
+@pguard = params[:pg]
+@sguard = params[:sg]
+@sforward = params[:sf]
+@pforward = params[:pf]
+@sguard = params[:sg]
+@center = params[:c]
 
   erb :team
 end
 end
+expect(page).to have_selector("form")
+expect(page).to have_field(:name)
+expect(page).to have_field(:coach)
+expect(page).to have_field(:pg)
+expect(page).to have_field(:sg)
+expect(page).to have_field(:sf)
+expect(page).to have_field(:pf)
+expect(page).to have_field(:c)
