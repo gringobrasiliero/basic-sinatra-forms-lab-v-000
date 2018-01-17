@@ -9,11 +9,11 @@ end
 post '/team' do
 @team = params[:team]
 @coach = params[:coach]
-@pguard = params[:pg]
-@sguard = params[:sg]
-@sforward = params[:sf]
-@pforward = params[:pf]
-@center = params[:c]
+@pg = params[:pg]
+@sg = params[:sg]
+@sf = params[:sf]
+@pf = params[:pf]
+@c = params[:c]
 
   erb :team
 end
