@@ -13,7 +13,6 @@ post '/team' do
 @sguard = params[:sg]
 @sforward = params[:sf]
 @pforward = params[:pf]
-@sguard = params[:sg]
 @center = params[:c]
 
   erb :team
